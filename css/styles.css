@@ -4,9 +4,12 @@
 /* and above unless overwritten below */
 
 body {
-  background: #fcc;
-} 
+  background: ##000000;
+}
 
+ h1{
+   color: #fff
+ }
 
 
 /* TABLET STYLES */
@@ -14,10 +17,10 @@ body {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
-    background: #cfc;
-  } 
+    background: ##c0c0c0;
+  }
 }
 
 
@@ -29,6 +32,6 @@ body {
   /* applies to screens wider than 999px */
 
   body {
-    background: #ccf;
-  } 
+    background: #fff;
+  }
 }
