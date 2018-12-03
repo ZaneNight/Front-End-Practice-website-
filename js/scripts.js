@@ -1,1 +1,1 @@
-console.log("hello");
+alert("Welcome to Clucth Control!");
