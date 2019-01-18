@@ -48,7 +48,7 @@ nav a{
  text-align: center;
 }
 
-}
+
 .menu:hover + nav,
 nav:hover{
   display:flex;
@@ -126,6 +126,22 @@ footer {
 
 }
 
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  height: 15vh;
+  width: auto;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
 
 
 
@@ -183,12 +199,7 @@ main {
   /*height: 25vh;*/
   background: black;
 }
-.container{
-  max-width: 60%;
-  max-height:30%;
-  padding-left: 200px;
-object-fit: cover;
-}
+
 /*GEAR SHIFT MAGAZINE*/
 
 .area{
@@ -238,3 +249,5 @@ footer {
 }
 .footer{
   grid-area:footer;
+}
+}
