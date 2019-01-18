@@ -1,4 +1,4 @@
-/*Mobile breakpoint*/
+/*Mobliles break point*/
 body {
   margin: 0;
   font-family: Avenir, Helveltica, Arial, san-serif;
@@ -14,7 +14,7 @@ body {
   grid-template-areas:
     "header  header"
     "menu   menu"
-    "container  container"
+    "content  content"
     "footer  footer";
 }
 /*Mobile Header*/
@@ -61,8 +61,7 @@ nav:hover{
 /*Mobile Main Content section*/
 main {
   grid-area: container;
-  /* increasing the height of one element increases all row heights */
-  /*height: 25vh;*/
+
   background: black;
 }
 .container img{
@@ -78,40 +77,6 @@ main {
   margin: auto;
   overflow: hidden;
 }
-.button_1{
-  height:38px;
-background:#ff0000;
-border:5px;
-padding-left: 20px;
-padding-right:20px;
-color:#ffffff;
-}
-
-
-#GSmagazine{
-	padding: 15px;
-	color: #ffffff;
-	background: #000000;
-}
-#GSmagazine h1{
-text-align: center;
-font-size: 35px;
-}
-#GSmagazine form{
-	float:right;
-	margin-top: 15px;
-}
-#GSmagazine input [type="email"]{
-
-}
-
-section .highlight{
-  color: #ff0000;
-  font-weight: bold;
-}
-
-
-
 
 
 
@@ -141,7 +106,7 @@ footer {
     grid-template-rows: 15vh 75vh 10vh;
     grid-template-areas:
       "header  menu  menu"
-      "container container container"
+      "content content content"
       "footer  footer  footer";
 
   /*Header Section styles for tablet and desktop*/
