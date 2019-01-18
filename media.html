@@ -29,7 +29,7 @@
   <main>
     <h2>Gallery</h2>
       <div class="gallery">
-              <img src="./img/image-gallery-1 Cropped.jpg">
+              <img src="./img/image-gallery-1 Cropped.jpg" id="myIMG">
               <img src="./img/image-gallery-2 Cropped.jpg">
               <img src="./img/image-gallery-3 Cropped.jpg">
               <img src="./img/image-gallery-4 Cropped.jpg">
@@ -38,12 +38,24 @@
               <img src="./img/image-gallery-7 Cropped.jpg">
               <img src="./img/image-gallery-8 Cropped.jpg">
         </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
   </main>
 
   <footer>
     <p>LIVE YOUR LIFE AT 100MPH JUST MAKE SURE YOU CAN HANDLE IT</P>
     </footer>
-
+    <script src="./js/scripts.js"></script>
 </body>
-
 </html>
