@@ -62,7 +62,6 @@ nav:hover{
 
 
 
-
 /*Mobile Main Content section*/
 main {
   grid-area: container;
@@ -115,11 +114,40 @@ section .highlight{
   font-weight: bold;
 }
 
+.accordion {
+  background-color: #830000;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: #ccc;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
+.active-div, .accordion:hover {
+  background-color: #490000;
+}
 
+.panel {
+  background-color: #a00000;
+  display: none;
+  width: 75%;
+  display: none;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
+}
 
-
-
+.panel p {
+  font-size: 1rem;
+  color: #ccc;
+  padding: 1%;
+}
 
 /*Mobile footer section*/
 footer {

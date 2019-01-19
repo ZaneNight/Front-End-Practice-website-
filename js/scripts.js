@@ -16,10 +16,26 @@ for (i = 0; i < img.length; i++) {
 }
 
 
-// Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+if (span != null){
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+}
+
+let acc = document.getElementsByClassName("accordion");
+let a;
+
+for (a = 0; a < acc.length; a++) {
+  acc[a].addEventListener("click", function() {
+    this.classList.toggle("active-div");
+
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "flex") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "flex";
+    }
+  });
 }
