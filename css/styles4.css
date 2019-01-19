@@ -66,6 +66,10 @@ header .highlight{
 	top:1px;
 }
 
+address {
+  text-align: center;
+}
+
 
 
 nav {
@@ -187,10 +191,10 @@ footer {
   grid-area: footer;
   background: #353637;
   text-align: center;
+  margin-top: 2%;
 }
 .footer{
   grid-area:footer;
-
 }
 
 .gallery {
@@ -436,8 +440,6 @@ input[type=submit]:hover {
   footer {
     grid-area: footer;
     background: #353637;
-    /* needs to take up the full grid row so this leaves a gap! */
-    /* height: 3em; */
   }
 
   .footer {
