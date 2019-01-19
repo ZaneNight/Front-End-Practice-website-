@@ -5,11 +5,14 @@ body {
   font-weight: bold;
   font-size: 1.5rem;
   color: #fff;
+  background-image: url("../img/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
 }
 .grid {
   display: grid;
   grid-template-columns:  1fr;
-  grid-template-rows: 10vh 20vh 60vh  10vh;
+  grid-template-rows: auto auto auto auto;
   /*grid-gap: 6px; */
   grid-template-areas:
     "header  header"
@@ -49,12 +52,15 @@ nav a{
  text-align: center;
 }
 
-}
+
 .menu:hover + nav,
 nav:hover{
   display:flex;
 }
 
+.active {
+  color: white;
+}
 
 
 
@@ -63,15 +69,8 @@ main {
   grid-area: container;
   /* increasing the height of one element increases all row heights */
   /*height: 25vh;*/
-  background: black;
 }
-.container img{
-  grid-area: container;
-  width: 100%;
-  max-height:100%;
-  object-fit: cover;
 
-}
 
 .area{
   width: 80%;
@@ -89,9 +88,9 @@ color:#ffffff;
 
 
 #GSmagazine{
-	padding: 15px;
-	color: #ffffff;
-	background: #000000;
+  color: #ffffff;
+  background: black;
+  opacity: .8;
 }
 #GSmagazine h1{
 text-align: center;
@@ -99,10 +98,6 @@ font-size: 35px;
 }
 #GSmagazine form{
 	float:right;
-	margin-top: 15px;
-}
-#GSmagazine input [type="email"]{
-
 }
 
 section .highlight{
@@ -127,6 +122,12 @@ footer {
 
 }
 
+.area{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
 
 
 
@@ -138,7 +139,7 @@ footer {
     grid-template-columns:  1fr 1fr 1fr;
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
     /*or set the rows to 'view height (vh)'*/
-    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-rows: auto 80vh auto;
     grid-template-areas:
       "header  menu  menu"
       "container container container"
@@ -182,21 +183,10 @@ main {
   grid-area: container;
   /* increasing the height of one element increases all row heights */
   /*height: 25vh;*/
-  background: black;
 }
-.container{
-  max-width: 60%;
-  max-height:30%;
-  padding-left: 200px;
-object-fit: cover;
-}
+
 /*GEAR SHIFT MAGAZINE*/
 
-.area{
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
 .button_1{
   height:38px;
 background:#ff0000;
@@ -207,22 +197,6 @@ color:#ffffff;
 }
 
 
-#GSmagazine{
-	padding: 15px;
-	color: #ffffff;
-	background: #000000;
-}
-#GSmagazine h1{
-text-align: center;
-font-size: 35px;
-}
-#GSmagazine form{
-	float:right;
-	margin-top: 15px;
-}
-#GSmagazine input [type="email"]{
-
-}
 
 section .highlight{
   color: #ff0000;
@@ -239,3 +213,5 @@ footer {
 }
 .footer{
   grid-area:footer;
+}
+}
