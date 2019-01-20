@@ -5,18 +5,14 @@ body {
   font-size: 1.5rem;
   color: #fff;
   background: black;
-
 }
 .grid {
   display: grid;
-  grid-template-columns:  1fr;
-  grid-template-rows: auto auto auto  auto;
-  /*grid-gap: 6px; */
-  grid-template-areas:
-    "header"
-    "menu"
-    "container"
-    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+ /*grid-gap: 6px;
+  */
+  grid-template-areas: "header" "menu" "container" "footer";
 }
 /*Mobile Header*/
 header {
@@ -28,13 +24,10 @@ header {
   text-align: center;
   font-size: 35px;
 }
-
 header .highlight{
   color: #ff0000;
   font-weight: bold;
 }
-
-
 nav {
   grid-area: menu;
   display: flex;
@@ -42,30 +35,22 @@ nav {
   background: #353637;
 }
 nav a{
- padding: 0.35em 1.5em;
- color: #ff0000;
- background: black;
- text-decoration: none;
- transition: all 1.5s;
- text-align: center;
+  padding: 0.35em 1.5em;
+  color: #ff0000;
+  background: black;
+  text-decoration: none;
+  transition: all 1.5s;
+  text-align: center;
 }
-
-
-.menu:hover + nav,
-nav:hover{
+.menu:hover + nav, nav:hover{
   display:flex;
 }
-
 .active {
   color: white;
 }
-
 main {
   grid-area: container;
 }
-
-
-
 footer {
   grid-area: footer;
   background: #353637;
@@ -75,19 +60,16 @@ footer {
 .footer{
   grid-area:footer;
 }
-
 h2 {
   text-align: center;
 }
-
 .row {
   display: flex;
   flex-flow: row wrap;
-    justify-content: space-around;
-    flex-direction: column;
+  justify-content: space-around;
+  flex-direction: column;
   margin: 3%;
 }
-
 .column {
   width: 90%;
   margin-bottom: 16px;
@@ -96,32 +78,26 @@ h2 {
   text-align: center;
   font-size: 1rem;
 }
-
 /* Add some shadows to create a card effect */
 .card {
   box-shadow: 0 4px 8px 0 rgba(129, 0, 0, 0.2);
 }
-
 .card img {
   width: 100%;
 }
-
 /* Some left and right padding inside the container */
 .container {
   padding: 0 16px;
 }
-
 /* Clear floats */
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
 .title {
   color: grey;
 }
-
 .button {
   border: none;
   outline: 0;
@@ -133,11 +109,9 @@ h2 {
   cursor: pointer;
   width: 100%;
 }
-
 .button:hover {
   background-color: #555;
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -146,11 +120,10 @@ h2 {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; 
+  overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
-
 .modal-content {
   background-color: #fefefe;
   border-radius: 10px;
@@ -163,95 +136,72 @@ h2 {
   width: 70%;
   height: auto;
 }
-
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
-
-
-
 /*Tablet / Desk top breakpoint*/
-
 @media screen and (min-width: 500px) {
   .grid {
-    grid-template-columns:  1fr 1fr 1fr;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
-    /*or set the rows to 'view height (vh)'*/
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "header  menu  menu"
-      "container container container"
-      "footer  footer  footer";
-
-  /*Header Section styles for tablet and desktop*/
-  }
-
+      grid-template-columns: 1fr 1fr 1fr;
+     /*grid-template-rows: 1fr 1fr 1fr 1fr;
+     */
+     /*or set the rows to 'view height (vh)'*/
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "header menu menu" "container container container" "footer footer footer";
+     /*Header Section styles for tablet and desktop*/
+ }
   header {
-    grid-area:header;
-    background: #353637;
-    color:#ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    text-align: center;
-    font-size: 40px;
-  }
-
- 
+      grid-area:header;
+      background: #353637;
+      color:#ffffff;
+      padding-top: 30px;
+      min-height: 70px;
+      text-align: center;
+      font-size: 40px;
+ }
   nav {
-    grid-area: menu;
-    display: flex;
-    flex-direction: row;
-    background: #353637;
-  }
-
+      grid-area: menu;
+      display: flex;
+      flex-direction: row;
+      background: #353637;
+ }
   nav a{
-    padding: 1.25em 1.5em;
-    color: #ff0000;
-    background: #353637;
-    text-decoration: none;
-    transition: all 1.5s;
-  }
-
+      padding: 1.25em 1.5em;
+      color: #ff0000;
+      background: #353637;
+      text-decoration: none;
+      transition: all 1.5s;
+ }
   main {
-    grid-area: container;
-    background: black;
-  }
-
+      grid-area: container;
+      background: black;
+ }
   section .highlight{
-    color: #ff0000;
-    font-weight: bold;
-  }
-
+      color: #ff0000;
+      font-weight: bold;
+ }
   footer {
-    grid-area: footer;
-    background: #353637;
-  }
-
+      grid-area: footer;
+      background: #353637;
+ }
   .footer {
-    grid-area:footer;
-  }
-
+      grid-area:footer;
+ }
   .row {
       flex-direction: row;
-    }
-
-    .column {
+ }
+  .column {
       width: 30%;
-    }
-
-    .modal-content {
+ }
+  .modal-content {
       width: 40%;
-    }
-
+ }
 }
