@@ -61,7 +61,7 @@ window.onclick = function(event) {
   }
 }
 
-const viewDetailsButton = document.getElementsByTagName('button');
+const viewDetailsButton = document.getElementsByClassName('carDetailsButton');
 if (viewDetailsButton != null){
   for (let q = 0; q < viewDetailsButton.length; q++) {
     viewDetailsButton[q].onclick = function() {
