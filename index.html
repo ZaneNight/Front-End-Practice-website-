@@ -26,12 +26,19 @@
 
 
   <main>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Your have subscribed to our mailing list</p>
+      </div>
+    </div>
+
     <section id="GSmagazine">
         <div class="area">
-          <form  class="form">
+          <form class="form" action="#">
               <h1 class="flickering">Become Part Of The <span class="highlight">GS</span> Squad</h1>
-              <input type="email" placeholder="Enter Email here...">
-              <button type="submit" class="myButton">Join the team</button>
+              <input type="email" id="email-input" placeholder="Enter Email here...">
+              <button class="myButton" id="submitBtnForm">Join the team</button>
             </form>
             </div>
     </section>
@@ -39,8 +46,8 @@
 
   <footer>
     <p>LIVE YOUR LIFE AT 100MPH JUST MAKE SURE YOU CAN HANDLE IT</P>
-    </footer>
-
+  </footer>
+  <!-- Javascript -->
+  <script src="./js/scripts.js"></script>
 </body>
-
 </html>
