@@ -64,27 +64,10 @@ nav:hover{
 
 
 
-/*Mobile Main Content section*/
 main {
   grid-area: container;
-  /* increasing the height of one element increases all row heights */
-  /*height: 25vh;*/
 }
 
-
-.area{
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-.button_1{
-  height:38px;
-background:#ff0000;
-border:5px;
-padding-left: 20px;
-padding-right:20px;
-color:#ffffff;
-}
 
 
 #GSmagazine{
@@ -93,11 +76,43 @@ color:#ffffff;
   opacity: .8;
 }
 #GSmagazine h1{
-text-align: center;
 font-size: 35px;
+float: left;
 }
-#GSmagazine form{
-	float:right;
+
+.form{
+  float:left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form >  input{
+  float:left;
+  border-radius: 5px;
+  height: 28px;
+  margin-top: 2px;
+  margin-left: 20px;
+  border: none;
+  text-indent: 10px;
+}
+
+.flickering {
+  -webkit-animation: flicker 5s infinite;
+}
+
+@-webkit-keyframes flicker
+{
+0% {opacity:0;}
+9% {opacity:0;}
+10% {opacity:.5;}
+13% {opacity:0;}
+20% {opacity:.5;}
+25% {opacity:1;}
+}
+
+.form > button {
+  margin-left: 10px;
 }
 
 section .highlight{
@@ -105,6 +120,32 @@ section .highlight{
   font-weight: bold;
 }
 
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+	background-color:#ce0100;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 
 
@@ -126,6 +167,8 @@ footer {
   width: 80%;
   margin: auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -184,18 +227,6 @@ main {
   /* increasing the height of one element increases all row heights */
   /*height: 25vh;*/
 }
-
-/*GEAR SHIFT MAGAZINE*/
-
-.button_1{
-  height:38px;
-background:#ff0000;
-border:5px;
-padding-left: 20px;
-padding-right:20px;
-color:#ffffff;
-}
-
 
 
 section .highlight{
