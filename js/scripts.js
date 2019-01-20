@@ -6,8 +6,7 @@ let img = document.getElementsByTagName("img");
 let modalImg = document.getElementById("img01");
 let captionText = document.getElementById("caption");
 
-let i;
-for (i = 0; i < img.length; i++) {
+for (let i = 0; i < img.length; i++) {
   img[i].onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -25,9 +24,8 @@ if (span != null){
 }
 
 let acc = document.getElementsByClassName("accordion");
-let a;
 
-for (a = 0; a < acc.length; a++) {
+for (let a = 0; a < acc.length; a++) {
   acc[a].addEventListener("click", function() {
     this.classList.toggle("active-div");
 
@@ -132,7 +130,7 @@ if (viewDetailsButton != null){
       "make_country":"Italy"
     },
     {
-      "model_make_id":"koenigsegg",
+      "model_make_id":"Koenigsegg",
       "model_name":"Agera",
       "model_trim":"LP 700-4 2dr Coupe AWD (6.5L 12cyl 7AM)",
       "model_engine_fuel":"Premium Unleaded (Required)",
@@ -147,7 +145,7 @@ if (viewDetailsButton != null){
       "make_country":"Sweden",
     },
     {
-      "model_make_id":"lotus",
+      "model_make_id":"Lotus",
       "model_name":"Evora",
       "model_trim":"2+0",
       "model_year":"2011",
@@ -160,7 +158,7 @@ if (viewDetailsButton != null){
       "model_engine_power_ps":"450",
     },
     {
-      "model_make_id":"ford",
+      "model_make_id":"Ford",
       "model_name":"GT",
       "model_trim":"2dr Coupe (3.8L 8cyl gas\/electric hybrid 7A)",
       "model_year":"2006",

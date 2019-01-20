@@ -12,7 +12,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto 81vh auto;
  /*grid-gap: 6px;
   */
   grid-template-areas: "header header" "menu menu" "container container" "footer footer";
@@ -62,12 +62,14 @@ main {
 #GSmagazine h1{
   font-size: 35px;
   float: left;
+  text-align: center;
 }
 .form{
   float:left;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: row wrap;
 }
 .form > input{
   float:left;
@@ -102,6 +104,7 @@ main {
  }
 }
 .form > button {
+  margin-top: 15px;
   margin-left: 10px;
 }
 section .highlight{
@@ -239,4 +242,8 @@ footer {
   .footer{
       grid-area:footer;
  }
+
+ .form > button {
+  margin-top: 0px;
+}
 }
