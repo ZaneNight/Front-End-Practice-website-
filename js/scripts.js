@@ -69,11 +69,13 @@ if (viewDetailsButton != null){
     viewDetailsButton[q].onclick = function() {
         if (viewDetailsButton[q] == viewDetailsButton[0]){  
           formModal.style.display = "block";
+          loadJSON(0);
         } else if (viewDetailsButton[q] == viewDetailsButton[1]){  
           formModal.style.display = "block";
+          loadJSON(1);
         } else if (viewDetailsButton[q] == viewDetailsButton[2]){  
           formModal.style.display = "block";
-          loadJSON("Lamborghini");
+          loadJSON(2);
         }
     }
   }
@@ -90,16 +92,19 @@ if (viewDetailsButton != null){
         "model_engine_fuel":"Gasoline",
         "model_top_speed_kph":"408",
         "model_transmission_type":"Automatic",
+        "model_engine_power_ps":"900",
         "model_seats":"2",
         "model_doors":"2",
         "make_country":"Italy"
     },
     {
-      "model_make_id":"McLaren",
+        "model_make_id":"McLaren",
          "model_name":"P1",
          "model_trim":"2dr Coupe (3.8L 8cyl gas\/electric hybrid 7A)",
          "model_year":"2016",
          "model_engine_cc":"3800",
+         "model_engine_power_ps":"870",
+         "model_top_speed_kph":"384",
          "model_engine_fuel":"Premium Unleaded (Required)",
          "model_transmission_type":"Automated Manual",
          "make_country":"UK"
@@ -112,6 +117,7 @@ if (viewDetailsButton != null){
       "model_engine_cc":"6500",
       "model_engine_fuel":"Premium Unleaded (Required)",
       "model_engine_type":"V",
+      "model_top_speed_kph":"390",
       "model_engine_valves_per_cyl":"4",
       "model_engine_power_ps":"700",
       "make_country":"Italy"
@@ -120,7 +126,14 @@ if (viewDetailsButton != null){
 }
 
 function loadJSON(carModel) {   
-  document.getElementById("car-heading").innerHTML = user_profile.cars[0].model_make_id + " " +user_profile.cars[0].model_name;
+  document.getElementById("car-heading").innerHTML = user_profile.cars[carModel].model_make_id + " " +user_profile.cars[carModel].model_name;
+  document.getElementById("car-year").innerHTML = "Make year: " + user_profile.cars[carModel].model_year;
+  document.getElementById("car-country").innerHTML = "Country : " + user_profile.cars[carModel].make_country;
+  document.getElementById("car-trim").innerHTML = "Trim : " + user_profile.cars[carModel].model_trim;
+  document.getElementById("car-engine-fuel").innerHTML = "Engine fuel : " + user_profile.cars[carModel].model_engine_fuel;
+  document.getElementById("car-engine-power").innerHTML = "Engine power : " + user_profile.cars[carModel].model_engine_power_ps;
+  document.getElementById("car-engine-cc").innerHTML = "Engine cc : " + user_profile.cars[carModel].model_engine_cc;
+  document.getElementById("car-top-speed").innerHTML = "Top speed : " + user_profile.cars[carModel].model_top_speed_kph;
  }
   
  loadJSON();
