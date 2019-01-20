@@ -136,7 +136,5 @@ function loadJSON(carModel) {
   document.getElementById("car-top-speed").innerHTML = "Top speed : " + user_profile.cars[carModel].model_top_speed_kph;
  }
   
- loadJSON();
-
 
 
