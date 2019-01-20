@@ -76,6 +76,15 @@ if (viewDetailsButton != null){
         } else if (viewDetailsButton[q] == viewDetailsButton[2]){  
           formModal.style.display = "block";
           loadJSON(2);
+        } else if (viewDetailsButton[q] == viewDetailsButton[3]){  
+          formModal.style.display = "block";
+          loadJSON(3);
+        } else if (viewDetailsButton[q] == viewDetailsButton[4]){  
+          formModal.style.display = "block";
+          loadJSON(4);
+        } else if (viewDetailsButton[q] == viewDetailsButton[5]){  
+          formModal.style.display = "block";
+          loadJSON(5);
         }
     }
   }
@@ -121,6 +130,46 @@ if (viewDetailsButton != null){
       "model_engine_valves_per_cyl":"4",
       "model_engine_power_ps":"700",
       "make_country":"Italy"
+    },
+    {
+      "model_make_id":"koenigsegg",
+      "model_name":"Agera",
+      "model_trim":"LP 700-4 2dr Coupe AWD (6.5L 12cyl 7AM)",
+      "model_engine_fuel":"Premium Unleaded (Required)",
+      "model_year":"2011",
+      "model_body":"Coupe",
+      "model_top_speed_kph":"420",
+      "model_engine_position":"Middle",
+      "model_engine_cc":"5000",
+      "model_engine_power_ps":"600",
+      "model_engine_type":"V",
+      "make_display":"Koenigsegg",
+      "make_country":"Sweden",
+    },
+    {
+      "model_make_id":"lotus",
+      "model_name":"Evora",
+      "model_trim":"2+0",
+      "model_year":"2011",
+      "model_engine_position":"Middle",
+      "model_engine_cc":"3500",
+      "model_top_speed_kph":"287",
+      "model_transmission_type":"Manual",
+      "make_country":"UK",
+      "model_engine_fuel":"Gasoline",
+      "model_engine_power_ps":"450",
+    },
+    {
+      "model_make_id":"ford",
+      "model_name":"GT",
+      "model_trim":"2dr Coupe (3.8L 8cyl gas\/electric hybrid 7A)",
+      "model_year":"2006",
+      "model_body":"Coupe",
+      "model_engine_cc":"5409",
+      "model_engine_power_ps":"500",
+      "model_engine_fuel":"Gasoline - Premium",
+      "model_top_speed_kph":"300",
+      "make_country":"USA"
     }
   ]
 }

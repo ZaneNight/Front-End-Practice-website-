@@ -160,7 +160,7 @@ h2 {
   border: 1px solid #888;
   text-align: center;
   color: #ce0100;
-  width: 40%;
+  width: 70%;
   height: auto;
 }
 
@@ -248,6 +248,10 @@ h2 {
 
     .column {
       width: 30%;
+    }
+
+    .modal-content {
+      width: 40%;
     }
 
 }
