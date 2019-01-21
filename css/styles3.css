@@ -161,6 +161,12 @@ h2 {
   padding: 10px 0;
   height: 150px;
 }
+
+footer p i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
   animation-name: zoom;

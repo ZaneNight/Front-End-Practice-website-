@@ -80,6 +80,12 @@ main {
   border: none;
   text-indent: 10px;
 }
+
+footer p i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .flickering {
   -webkit-animation: flicker 5s infinite;
 }

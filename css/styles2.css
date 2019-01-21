@@ -136,6 +136,12 @@ h2 {
   width: 70%;
   height: auto;
 }
+
+footer p i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .close {
   color: #aaa;
   float: right;

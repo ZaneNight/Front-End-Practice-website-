@@ -32,6 +32,12 @@ header .highlight{
   color: #ff0000;
   font-weight: bold;
 }
+
+footer p i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .myButton {
   box-shadow:inset 0px 1px 0px 0px #f29c93;
   background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
