@@ -50,9 +50,10 @@ if (submitBtnForm != null){
     }
   }
 }
-
-closeBtnForm.onclick = function() {
-  formModal.style.display = "none";
+if (closeBtnForm != null){
+  closeBtnForm.onclick = function() {
+    formModal.style.display = "none";
+  }
 }
 
 window.onclick = function(event) {
